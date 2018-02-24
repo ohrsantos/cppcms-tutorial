@@ -1,8 +1,11 @@
 FROM ohrsan/base-cppcms
 MAINTAINER Orlando Hehl Rebelo dos Santos
+RUN echo 'alias ll="ls -lF"' >> ~/.profile
+RUN echo 'cd /var/www' >> ~/.profile
 ENV APP_ENV=DEV
 COPY  .  /var/www
-WORKDIR /var/www
+WORKDIR /var/www/app
+#RUN touch *
+RUN ./make.sh
 ENTRYPOINT /var/www/launch.sh
-#ENTRYPOINT [ "sh" ]
 EXPOSE 8080
