@@ -1,0 +1,8 @@
+FROM ohrsan/base-cppcms
+MAINTAINER Orlando Hehl Rebelo dos Santos
+ENV APP_ENV=DEV
+COPY  .  /var/www
+WORKDIR /var/www
+#ENTRYPOINT /var/www/launch.sh
+ENTRYPOINT [ "sh" ]
+EXPOSE 8080
