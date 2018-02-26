@@ -1,4 +1,3 @@
-echo ver 001
 cd app
 #make app > make.log 2>&1
 
@@ -9,6 +8,7 @@ date
 date > date.txt
 read
 while true; do
+    echo "getting the loop..."
     LD_LIBRARY_PATH=/usr/local/lib/ ./app -c config.js 
     sleep 2
 done
