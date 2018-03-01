@@ -15,7 +15,7 @@ public:
 
 void my_hello_world::main(std::string /*url*/)
 {
-    std::cout << "Request received." << endl;
+    std::cout << "Request received." << std::endl;
 
     response().out()<<
         "<html>\n"
