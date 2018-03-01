@@ -2,5 +2,5 @@ docker build -f containers/Dockerfile.dev-tutorial-cppcms  -t ohrsan/dev-tutoria
 
 docker login -u=ohrsan -p=bomdia01
 
-docker push ohrsan/dev-dev-tutorial-cppcms
+docker push ohrsan/dev-tutorial-cppcms
 
