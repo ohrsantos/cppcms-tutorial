@@ -1,1 +1,1 @@
-make app > make.log 2>&1
+make app 
