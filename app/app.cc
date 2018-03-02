@@ -6,10 +6,7 @@
 
 class my_hello_world : public cppcms::application {
 public:
-    my_hello_world(cppcms::service &srv) :
-        cppcms::application(srv) 
-    {
-    }
+    my_hello_world(cppcms::service &srv) : cppcms::application(srv) { }
     virtual void main(std::string url);
 };
 
